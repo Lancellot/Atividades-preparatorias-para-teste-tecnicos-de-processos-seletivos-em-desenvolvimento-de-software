@@ -3,5 +3,12 @@ const palavrasAnagramas = (palavra1, palavra2) => {
     return reversedPalavra === palavra2;
 }
 
-console.log(palavrasAnagramas('amor', 'roma'));
-console.log(palavrasAnagramas('casa', 'saca')); 
+
+const palavra1 = 'amor';
+const palavra2 = 'roma';
+
+const palavra3 = 'amor';
+const palavra4 = 'casa';
+
+console.log(palavrasAnagramas(palavra1, palavra2));
+console.log(palavrasAnagramas(palavra3, palavra4));
