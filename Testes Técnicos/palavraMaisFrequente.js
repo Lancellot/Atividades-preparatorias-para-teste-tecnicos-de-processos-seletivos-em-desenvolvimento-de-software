@@ -1,5 +1,5 @@
 const palavraMaisFrequente = (texto) => {
-    const palavras = texto.split(' ');
+    const palavras = texto.toLowerCase().split(' ');
     const frequencia = {};
 
     for (const palavra of palavras) {
@@ -9,9 +9,10 @@ const palavraMaisFrequente = (texto) => {
             frequencia[palavra] = 1;
         }
     }
-    let maisFrequente = null;
-    let maxFrequencia = 0;
     
+    let maisFrequente = "";
+    let maxFrequencia = 0;
+
     for (const palavra in frequencia) {
         if (frequencia[palavra] > maxFrequencia) {
             maxFrequencia = frequencia[palavra];
